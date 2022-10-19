@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentQuizView">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/textViewQuizTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Question 1"
+                android:textSize="25dp"
+                android:textColor="@android:color/primary_text_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question"
+                    android:textSize="17dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/primary_text_light" />
+
+
+                <TextView
+                    android:id="@+id/quizQuestionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/primary_text_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A:"
+                        android:textSize="17dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@android:color/primary_text_light" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="10dp"
+                        android:outlineAmbientShadowColor="@color/colorPrimary"
+                        android:background="#D1D0D0"
+                        tools:targetApi="p"
+                        >
+                        <Button
+                            android:id="@+id/qiuzOptionABtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="normal"
+                            android:textSize="16dp"
+                            android:text=""
+                            android:background="?attr/selectableItemBackground"
+                            />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B:"
+                        android:textSize="17dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@android:color/primary_text_light" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="10dp"
+                        android:outlineAmbientShadowColor="@color/colorPrimary"
+                        android:background="#D1D0D0"
+                        tools:targetApi="p"
+                        >
+                        <Button
+                            android:id="@+id/qiuzOptionBBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="normal"
+                            android:textSize="16dp"
+                            android:text=""
+                            android:background="?attr/selectableItemBackground"
+                            />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C:"
+                        android:textSize="17dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@android:color/primary_text_light" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="10dp"
+                        android:outlineAmbientShadowColor="@color/colorPrimary"
+                        android:background="#D1D0D0"
+                        tools:targetApi="p"
+                        >
+                        <Button
+                            android:id="@+id/qiuzOptionCBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="normal"
+                            android:textSize="16dp"
+                            android:text=""
+                            android:background="?attr/selectableItemBackground"
+                            />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D:"
+                        android:textSize="17dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@android:color/primary_text_light" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="10dp"
+                        android:outlineAmbientShadowColor="@color/colorPrimary"
+                        android:background="#D1D0D0"
+                        tools:targetApi="p"
+                        >
+                        <Button
+                            android:id="@+id/qiuzOptionDBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="normal"
+                            android:textSize="16dp"
+                            android:text=""
+                            android:background="?attr/selectableItemBackground"
+                            />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#515151</color>
+    <color name="colorAccent">#E1E1E1</color>
+    <color name="colorInactiveBluetooth">#D6D5D5</color>
+    <color name="colorActiveBluetooth">#BAFACC</color>
+</resources>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    tools:context=".EditQuiz">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/textViewQuizTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Edit Quiz"
+                android:textSize="25dp"
+                android:textColor="@android:color/primary_text_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="17dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/primary_text_light" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:background="#D1D0D0"
+                    tools:targetApi="p"
+                    >
+                    <EditText
+                        android:id="@+id/editQiuzTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:scrollbars="vertical" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question"
+                    android:textSize="17dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/primary_text_light" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:background="#D1D0D0"
+                    tools:targetApi="p"
+                    >
+                    <EditText
+                        android:id="@+id/editQuizQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:gravity="left"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:minLines="6"
+                        android:maxLines="6"
+                        android:scrollbars="vertical" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option A"
+                    android:textSize="17dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/primary_text_light" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:background="#D1D0D0"
+                    tools:targetApi="p"
+                    >
+                    <EditText
+                        android:id="@+id/editQiuzOptionA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:scrollbars="vertical" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option B"
+                    android:textSize="17dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/primary_text_light" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:background="#D1D0D0"
+                    tools:targetApi="p"
+                    >
+                    <EditText
+                        android:id="@+id/editQiuzOptionB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:scrollbars="vertical" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option C"
+                    android:textSize="17dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/primary_text_light" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:background="#D1D0D0"
+                    tools:targetApi="p"
+                    >
+                    <EditText
+                        android:id="@+id/editQiuzOptionC"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:scrollbars="vertical" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option D"
+                    android:textSize="17dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/primary_text_light" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:background="#D1D0D0"
+                    tools:targetApi="p"
+                    >
+                    <EditText
+                        android:id="@+id/editQiuzOptionD"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:gravity="left"
+                        android:inputType="text"
+                        android:scrollbars="vertical" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Answer"
+                    android:textSize="17dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/primary_text_light" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:background="#D1D0D0"
+                    tools:targetApi="p"
+                    >
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/editSpinnerAnswer"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp"
+                android:elevation="10dp"
+                android:outlineAmbientShadowColor="@android:color/white"
+                android:background="@drawable/assent_background"
+                tools:targetApi="p"
+                >
+                <Button
+                    android:id="@+id/updateQuizBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Update Quiz"
+                    android:background="?attr/selectableItemBackground"
+                    />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

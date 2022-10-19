@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background"
+    tools:context=".StudentDashboard">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <TextView
+                android:id="@+id/noClassTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="100dp"
+                android:paddingBottom="100dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:text="No classes today"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:visibility="gone"/>
+
+            <ListView
+                android:id="@+id/courseForTheDayListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                ></ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

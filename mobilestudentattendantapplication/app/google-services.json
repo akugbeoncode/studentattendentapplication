@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "899685682207",
+    "firebase_url": "https://student-attendant-application.firebaseio.com",
+    "project_id": "student-attendant-application",
+    "storage_bucket": "student-attendant-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899685682207:android:093a4be594135ec8b6d92a",
+        "android_client_info": {
+          "package_name": "com.omo9ice.studentattendantapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899685682207-oe931a5n3gpdc37ts9qngmge993k02p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9WYKHbFYKilerlgceRRN1J8bRkMrCC7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899685682207-oe931a5n3gpdc37ts9qngmge993k02p4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

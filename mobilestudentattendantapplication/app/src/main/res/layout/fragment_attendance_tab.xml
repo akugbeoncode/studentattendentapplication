@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+           <LinearLayout
+               android:id="@+id/statusColorCode"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center_horizontal"
+               android:paddingTop="20dp"
+               android:paddingBottom="20dp"
+               android:background="#A3A1A1"
+               android:visibility="gone"
+           >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Status: Active"
+                   android:id="@+id/broadcatingStatusTextView"
+                   android:gravity="center"
+                   android:textSize="20dp"
+                   android:paddingTop="20dp"
+                   android:textColor="#000"
+                    android:visibility="gone"
+                   />
+               <ImageView
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:id="@+id/broadcastingStatusImage"
+                   android:layout_margin="15dp"
+                   android:visibility="gone"
+               />
+
+               <Button
+                   android:id="@+id/startAttendanceBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAllCaps="false"
+                   android:textColor="@color/colorAccent"
+                   android:paddingRight="20dp"
+                   android:paddingLeft="20dp"
+                   android:textStyle="bold"
+                   android:textSize="20dp"
+                   android:text="Start Attendance"
+                   android:layout_marginBottom="20dp"
+                   android:background="@color/colorPrimaryDark"
+                   android:visibility="gone"
+                   />
+
+               <Button
+                   android:id="@+id/StopAttendanceBtn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textAllCaps="false"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="bold"
+                   android:paddingRight="20dp"
+                   android:paddingLeft="20dp"
+                   android:textSize="20dp"
+                   android:text="Stop Attendance"
+                   android:layout_marginBottom="20dp"
+                   android:background="@color/colorPrimary"
+                   android:visibility="gone"
+                   />
+
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+            >
+                <TextView
+                    android:id="@+id/studentAttRatLabel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance Stats"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:paddingTop="50dp"
+                    android:textColor="#000"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/studentAttendanceRatio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="60dp"
+                    android:padding="30dp"
+                    android:textColor="#000"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/studentAttRatLabel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Students are in attendance"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="#000"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
